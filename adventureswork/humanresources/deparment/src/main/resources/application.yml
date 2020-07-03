@@ -1,0 +1,17 @@
+quarkus:
+   datasource:
+      db-kind: postgresql
+      username: postgres
+      password: p102030
+      jdbc:
+         url: jdbc:postgresql://localhost:5432/adventureworks
+         min-size: 4
+         max-size: 16
+   hibernate-orm:
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+      log:
+         sql: true
+      database: 
+         generation: none
+         default-schema: humanresource   
+   
